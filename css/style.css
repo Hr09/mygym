@@ -61,7 +61,7 @@ font-size: 17px;
 
 .bg-image {
   /* The image used */
-  background-image: url("C:/Users/Hrithik/Desktop/GYM/My_Gym/img/main/home-banner.jpg");
+  background-image: url("img/main/home-banner.jpg");
 
   /* Add the blur effect */
   filter: blur(8px);
