@@ -1,2 +1,2 @@
 # mygym
-gym project
+My  Gym project for college without using any frame work
