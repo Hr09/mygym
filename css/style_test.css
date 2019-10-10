@@ -4,46 +4,37 @@
 
 .h1-for-img-1{
   position: absolute;;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-transform:uppercase;
-  font-family: consolas;
-  letter-spacing:5px;
-  margin: 0 0 10px;
-  padding: 0;
-  color: transparent;
-  font-size: 50px;
+  top:8px;
+  left:2%;
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 
 }
 .h1-for-img-1::before{
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left:0;
-  width: 50%;
-  height:100%;
-  color:white;
-  overflow: hidden;
-  border-right: 1px solid white;
-  animation: type 15s steps(15) infinite;
-  white-space: nowrap;
+
 }
-@keyframes type
-{
-  0%{
-    width: 0;
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
   }
-  50%{
-    width: 100%;
-  }
-  100%{
-    width: 0;
+  100% {
+    background-position: 500%;
   }
 }
 
 .h1-for-fac-1{
-  color: red;
+  color: #c93838;
   background-color: black;
   text-align: center;
   font-size: 5rem;
@@ -61,7 +52,7 @@ body,html {
 
   height: 100%;
   font-family: Verdana, sans-serif;
-  background-color: grey;
+  background-color: #232325;
 }
 .body-margin{
   margin: 0;
@@ -73,7 +64,7 @@ body,html {
 /*===================================================================For navigation bar=======================================================================*/
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background: rgba(0,0,0,0.7);
   position: fixed;
   top: 0;
   width: 100%;
@@ -87,23 +78,23 @@ color: #f2f2f2;
 text-align: center;
 padding: 30px 20px;
 text-decoration: none;
-font-size: 1rem;
+font-size: 1.5rem;
 
 }
 .navbar .li-1-a:hover {
-  background:#ddd;
-  color: black;
+  background:black:;
+  color: grey;
 }
 /*==============================Registor on navigation bar css code=============================================*/
 .active-register-1{
-  background-color: red;
+  background-color: #c93838;
   float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 30px 20px;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 /*========================Section 1 code=======================*/
@@ -118,7 +109,7 @@ font-size: 1rem;
 
 .bg-image-1{
   /* The image used */
-  background-image: url("C:/Users/Hrithik/Desktop/mygym-master/mygym-master/img/main/home-banner.jpg");
+  background-image: url("C:/Users/Hrithik/Desktop/GYM/My_Gym/img/main/home-banner.jpg");
 
   /* Add the blur effect */
   filter: blur(8px);
@@ -141,7 +132,7 @@ font-size: 1rem;
   font-weight: bold;
   border: 3px  ;
   position: absolute;
-  top: 45%;
+  top: 7.2px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -176,7 +167,7 @@ font-size: 1rem;
 .prev-1, .next-1 {
   cursor: pointer;
 position: absolute;
-top: 50%;
+top: 8px;
 width: auto;
 padding: 16px;
 margin-top: -22px;
@@ -254,19 +245,20 @@ user-select: none;
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 600px) {
   .prev-1, .next-1,.text-on-img-1 {font-size: 25px}
 }
 /*=======================================================next code==============================================================*/
 .about-us-1{
   text-align: center;
-  color: Red;
+  color: #c93838;
   font-size: 2.5rem;
 }
 .para-1-abus-1{
   width:40%;
   margin: auto;
   font-size: 1.33rem;
+  color:white;
 }
 
 .about-us-div-1{
@@ -295,13 +287,11 @@ user-select: none;
 }
 .title:after
 {
-    content: " \f004  \f004";
-    font-family: FontAwesome;
     font-size: 22px;
     color: #EE6059;
     position: absolute;
     left: 50%;
-    top: 130%;
+    top: 20.8px;
     transform: translate(-50%, -50%);
 }
 
@@ -316,6 +306,7 @@ user-select: none;
     flex: 1;
     text-align: center;
     margin: 100px 20px;
+    margin-top: 0;
     background: #25292B;
     color: #fff;
 
@@ -361,13 +352,13 @@ user-select: none;
 /*============================================================faculty==============================================*/
 .row-for-fac-1  {
   display: flex;
-  background-color: white;
+  background-color: #25292B;
   padding: 5px
 }
 
 /* Create three equal columns that sits next to each other */
 .column-for-fac-1{
-  flex: 33.33%;
+  flex: 5.33p;
   padding: 5px;
 
 }
@@ -379,4 +370,12 @@ user-select: none;
 }
 .hike-on-fa-4{
     background-color:#1E2123;
+}
+
+
+@media only screen and (min-width: 00px) {
+      body{
+        width:50;
+      }
+  }
 }
